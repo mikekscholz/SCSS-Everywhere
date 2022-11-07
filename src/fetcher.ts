@@ -1,6 +1,6 @@
 import * as vscode from "vscode";
 import * as os from "os";
-import * as fs from "fs";
+import * as fs from "fs-extra";
 import * as http from "http";
 import * as https from "https";
 import { URL } from "url";
@@ -8,12 +8,11 @@ import * as crypto from "crypto";
 import * as path from "path";
 import ISimpleTextDocument from "./parse-engines/common/simple-text-document";
 import * as cheerio from 'cheerio';
-import * as fsExtra from "fs-extra";
 
 class Fetcher {
   private static async readFile(file: string): Promise<string> {
     return new Promise<string>((resolve, reject) => {
-      fs.readFile(file, (err, data) => {
+      fs.readFile(file, (err: any, data: any) => {
         if (err) {
           reject(err);
         }
@@ -107,8 +106,8 @@ class Fetcher {
     if (remoteStyleSheets.length > 0) {
 
       const folder = path.join(os.tmpdir(), "html_css_slim", prefix);
-      fsExtra.ensureDirSync(folder);
-      // console.log("SCSS-EVERYWHERE-DEBUG: ", "REMOTE_TMP_FOLDER_ENSURE:", folder)
+      fs.ensureDirSync(folder);
+      //console.log("SCSS-EVERYWHERE-DEBUG: ", "REMOTE_TMP_FOLDER_ENSURE:", folder)
 
       for (const remoteFile of remoteStyleSheets) {
         try {

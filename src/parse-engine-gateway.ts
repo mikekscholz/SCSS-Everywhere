@@ -1,4 +1,4 @@
-import * as fs from "fs";
+import * as fs from "fs-extra";
 import * as vscode from "vscode";
 
 import CssClassDefinition from "./common/css-class-definition";
@@ -8,7 +8,7 @@ import ParseEngineRegistry from "./parse-engines/parse-engine-registry";
 
 async function readFile(file: string): Promise<string> {
     return new Promise<string>((resolve, reject) => {
-        fs.readFile(file, (err, data) => {
+        fs.readFile(file, (err: any, data: any) => {
             if (err) {
                 reject(err);
             }
