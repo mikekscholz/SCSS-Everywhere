@@ -6,11 +6,14 @@
 </h1>
 
 <p align="center">
- <a href="https://marketplace.visualstudio.com/items?itemName=gencer.html-slim-scss-css-class-completion"><img src="https://vsmarketplacebadge.apphb.com/version-short/gencer.html-slim-scss-css-class-completion.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=VERSION" alt="VERSION"></a>&nbsp;
- <a href="https://marketplace.visualstudio.com/items?itemName=gencer.html-slim-scss-css-class-completion"><img src="https://vsmarketplacebadge.apphb.com/rating-short/gencer.html-slim-scss-css-class-completion.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Rating" alt="Rating"></a>&nbsp;
- <a href="https://marketplace.visualstudio.com/items?itemName=gencer.html-slim-scss-css-class-completion"><img src="https://vsmarketplacebadge.apphb.com/installs-short/gencer.html-slim-scss-css-class-completion.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Installs" alt="Installs"></a>&nbsp;
- <a href="https://marketplace.visualstudio.com/items?itemName=gencer.html-slim-scss-css-class-completion"><img src="https://vsmarketplacebadge.apphb.com/downloads-short/gencer.html-slim-scss-css-class-completion.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Downloads" alt="Downloads"></a>&nbsp;
+ <a href="https://marketplace.visualstudio.com/items?itemName=mikekscholz.html-slim-scss-css-class-completion"><img src="https://vsmarketplacebadges.dev/version-short/mikekscholz.html-slim-scss-css-class-completion.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=VERSION" alt="VERSION"></a>&nbsp;
+ <a href="https://marketplace.visualstudio.com/items?itemName=mikekscholz.html-slim-scss-css-class-completion"><img src="https://vsmarketplacebadges.dev/rating-short/mikekscholz.html-slim-scss-css-class-completion.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Rating" alt="Rating"></a>&nbsp;
+ <a href="https://marketplace.visualstudio.com/items?itemName=mikekscholz.html-slim-scss-css-class-completion"><img src="https://vsmarketplacebadges.dev/installs-short/mikekscholz.html-slim-scss-css-class-completion.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Installs" alt="Installs"></a>&nbsp;
+ <a href="https://marketplace.visualstudio.com/items?itemName=mikekscholz.html-slim-scss-css-class-completion"><img src="https://vsmarketplacebadges.dev/downloads-short/mikekscholz.html-slim-scss-css-class-completion.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Downloads" alt="Downloads"></a>&nbsp;
 </p>
+
+> Note: This fork is for convenience of install until @gencer has time to publish a release of this repo's already merged [pull request](https://github.com/gencer/SCSS-Everywhere/pull/81) because I'm tired of doing manual VSIX installs on all my machines.
+
 
 > Note: This is **drop-in** replacement for https://github.com/zignd/HTML-CSS-Class-Completion. Please uninstall that extension before installing this. Otherwise, things can happen.
 
@@ -71,11 +74,11 @@ Both directions (from CSS/SCSS to HTML, Latte... or from HTML, Latte to CSS/SCSS
 We introduced incremental build. In previous versions we had to re-cache all workspace to reflect our atomic changes. This causes high CPU usage and unnecessary delay to our development time. Hence, we introduced this feature. Once you open your VSCode workspace, initial scan will be made and all upcoming changes will be incrementally and instantly reflected to the cache.
 
 ## Contributions
-You can request new features and contribute to the extension development on its [repository on GitHub](https://github.com/gencer/HTML-CSS-Class-Completion/issues). Look for an issue you're interested in working on, comment on it to let me know you're working on it and submit your pull request! :D
+You can request new features and contribute to the extension development on its [repository on GitHub](https://github.com/mikekscholz/HTML-CSS-Class-Completion/issues). Look for an issue you're interested in working on, comment on it to let me know you're working on it and submit your pull request! :D
 
 For SCSS part, I have manually strip comments and do regexp on code. In this way I also able to locate magic methods/classes. For example; If you have `.u-pb-{class}` this extension will show you `.u-pb-` and leave it `class` name filled by you.
 
-Check out the [changelog](https://github.com/gencer/HTML-Slim-CSS-SCSS-Class-Completion/blob/master/CHANGELOG.md) for the current and previous updates.
+Check out the [changelog](https://github.com/mikekscholz/HTML-Slim-CSS-SCSS-Class-Completion/blob/master/CHANGELOG.md) for the current and previous updates.
 
 For more info check CHANGELOG.md
 
